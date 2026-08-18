@@ -467,3 +467,39 @@ a {
         gap: 35px;
     }
 }
+/* ================================
+   PAGE HERO
+================================ */
+
+.page-hero {
+    padding: 100px 0;
+    text-align: center;
+    background: #f5f8ff;
+}
+
+.page-hero h1 {
+    max-width: 850px;
+    margin: 0 auto 18px;
+    font-size: 52px;
+    line-height: 1.15;
+    color: #111827;
+}
+
+.page-hero > p:last-child {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #667085;
+    font-size: 17px;
+}
+
+@media (max-width: 650px) {
+
+    .page-hero {
+        padding: 70px 0;
+    }
+
+    .page-hero h1 {
+        font-size: 36px;
+    }
+
+}
