@@ -76,42 +76,56 @@ a {
 
 
 /* ================================
-   HERO
+   HOME HERO
 ================================ */
 
 .hero {
     min-height: 650px;
     display: flex;
     align-items: center;
+    justify-content: center;
+
     background:
         linear-gradient(
             90deg,
             #f5f8ff 0%,
-            #ffffff 70%
+            #ffffff 100%
         );
 }
 
 .hero-content {
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .hero-text {
-    max-width: 760px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
 }
+
+
+/* PROFESSIONAL PHOTO EDITING SERVICE */
 
 .small-title {
     color: #2563eb;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 2px;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
+
+/* MAIN HEADING */
+
 .hero h1 {
-    font-size: 64px;
-    line-height: 1.1;
-    letter-spacing: -2px;
+    font-size: 50px;
+    line-height: 1.15;
+    letter-spacing: -1px;
     margin-bottom: 25px;
     color: #111827;
 }
@@ -121,15 +135,23 @@ a {
     color: #2563eb;
 }
 
+
+/* DESCRIPTION */
+
 .hero-text > p:not(.small-title) {
-    max-width: 650px;
-    font-size: 18px;
+    max-width: 720px;
+    margin: 0 auto 35px;
+    font-size: 17px;
     color: #667085;
-    margin-bottom: 35px;
 }
+
+
+/* HERO BUTTONS */
 
 .hero-buttons {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 15px;
     flex-wrap: wrap;
 }
@@ -231,10 +253,7 @@ a {
 }
 
 .service-number {
-    font-size: 14px;
-    font-weight: 800;
-    color: #2563eb;
-    margin-bottom: 20px;
+    display: none;
 }
 
 .service-card h3 {
@@ -387,6 +406,32 @@ a {
 
 
 /* ================================
+   PAGE HERO
+================================ */
+
+.page-hero {
+    padding: 100px 0;
+    text-align: center;
+    background: #f5f8ff;
+}
+
+.page-hero h1 {
+    max-width: 850px;
+    margin: 0 auto 18px;
+    font-size: 52px;
+    line-height: 1.15;
+    color: #111827;
+}
+
+.page-hero > p:last-child {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #667085;
+    font-size: 17px;
+}
+
+
+/* ================================
    MOBILE RESPONSIVE
 ================================ */
 
@@ -397,7 +442,7 @@ a {
     }
 
     .hero h1 {
-        font-size: 48px;
+        font-size: 44px;
     }
 
     .service-grid {
@@ -428,71 +473,81 @@ a {
         gap: 12px 18px;
     }
 
+
+    /* MOBILE HERO */
+
     .hero {
         min-height: 560px;
         text-align: center;
     }
 
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .small-title {
+        font-size: 14px;
+        letter-spacing: 1.8px;
+        line-height: 1.5;
+    }
+
     .hero h1 {
-        font-size: 40px;
-        letter-spacing: -1px;
+        font-size: 36px;
+        line-height: 1.15;
+        letter-spacing: -0.5px;
     }
 
     .hero-text > p:not(.small-title) {
         font-size: 16px;
+        line-height: 1.7;
     }
 
     .hero-buttons {
         justify-content: center;
     }
 
+
+    /* SECTION */
+
     .section-heading h2 {
         font-size: 34px;
     }
+
+
+    /* SERVICES */
 
     .service-grid {
         grid-template-columns: 1fr;
     }
 
+
+    /* FEATURES */
+
     .features-grid {
         grid-template-columns: 1fr;
     }
+
+
+    /* FREE TRIAL */
 
     .trial-content h2 {
         font-size: 34px;
     }
 
+
+    /* FOOTER */
+
     .footer-content {
         grid-template-columns: 1fr;
         gap: 35px;
     }
-}
-/* ================================
-   PAGE HERO
-================================ */
 
-.page-hero {
-    padding: 100px 0;
-    text-align: center;
-    background: #f5f8ff;
-}
 
-.page-hero h1 {
-    max-width: 850px;
-    margin: 0 auto 18px;
-    font-size: 52px;
-    line-height: 1.15;
-    color: #111827;
-}
-
-.page-hero > p:last-child {
-    max-width: 650px;
-    margin: 0 auto;
-    color: #667085;
-    font-size: 17px;
-}
-
-@media (max-width: 650px) {
+    /* PAGE HERO */
 
     .page-hero {
         padding: 70px 0;
