@@ -558,3 +558,305 @@ a {
     }
 
 }
+/* ================================
+   FREE TRIAL PAGE
+================================ */
+
+.free-trial-section {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.free-trial-wrapper {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 70px;
+    align-items: start;
+}
+
+
+/* LEFT CONTENT */
+
+.trial-info {
+    padding-top: 20px;
+}
+
+.trial-label {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.trial-info h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    color: #111827;
+    margin-bottom: 18px;
+}
+
+.trial-description {
+    color: #667085;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 500px;
+    margin-bottom: 35px;
+}
+
+
+/* BENEFITS */
+
+.trial-benefit {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.benefit-icon {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eff6ff;
+    color: #2563eb;
+    border-radius: 50%;
+    font-weight: 800;
+}
+
+.benefit-item h3 {
+    font-size: 17px;
+    color: #111827;
+    margin-bottom: 3px;
+}
+
+.benefit-item p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* FORM CARD */
+
+.trial-form-card {
+    background: #ffffff;
+    border: 1px solid #e4e8ef;
+    border-radius: 18px;
+    padding: 40px;
+    box-shadow: 0 20px 55px rgba(15, 23, 42, 0.08);
+}
+
+.form-header {
+    margin-bottom: 30px;
+}
+
+.form-header h2 {
+    font-size: 28px;
+    color: #111827;
+    margin-bottom: 7px;
+}
+
+.form-header p {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+
+/* FORM ROW */
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+
+/* FORM GROUP */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #172033;
+    margin-bottom: 8px;
+}
+
+
+/* INPUTS */
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #d8dee8;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #172033;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    outline: none;
+    transition: 0.25s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+
+/* UPLOAD BOX */
+
+.upload-box {
+    position: relative;
+}
+
+.upload-box input[type="file"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.upload-label {
+    width: 100%;
+    min-height: 145px;
+    border: 2px dashed #cbd5e1;
+    border-radius: 12px;
+    background: #f8fafc;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.upload-label:hover {
+    border-color: #2563eb;
+    background: #f5f8ff;
+}
+
+.upload-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #eff6ff;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.upload-label strong {
+    color: #172033;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.upload-label small {
+    color: #7b8494;
+    font-size: 13px;
+}
+
+
+/* SUBMIT BUTTON */
+
+.trial-submit-btn {
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.trial-submit-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+
+/* FORM NOTE */
+
+.form-note {
+    text-align: center;
+    margin-top: 15px;
+    color: #8a94a6;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* ================================
+   FREE TRIAL MOBILE
+================================ */
+
+@media (max-width: 900px) {
+
+    .free-trial-wrapper {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .trial-info {
+        padding-top: 0;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .free-trial-section {
+        padding: 70px 0;
+    }
+
+    .trial-info h2 {
+        font-size: 32px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .trial-form-card {
+        padding: 25px;
+        border-radius: 14px;
+    }
+
+    .form-header h2 {
+        font-size: 24px;
+    }
+
+}
