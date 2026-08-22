@@ -164,10 +164,24 @@
 
 
                 <form
-                    action="https://formspree.io/f/xppankoq"
+                    action="https://formsubmit.co/elena.emily.fixphotoproblem@gmail.com"
                     method="POST"
                     enctype="multipart/form-data"
                 >
+
+                    <!-- FORM SETTINGS -->
+
+                    <input
+                        type="hidden"
+                        name="_subject"
+                        value="New Free Trial Request - Fix Photo Problem"
+                    >
+
+                    <input
+                        type="hidden"
+                        name="_template"
+                        value="table"
+                    >
 
 
                     <div class="form-row">
@@ -253,6 +267,8 @@
                     </div>
 
 
+                    <!-- IMAGE UPLOAD -->
+
                     <div class="form-group">
 
                         <label>
@@ -264,14 +280,15 @@
                             <input
                                 type="file"
                                 id="image"
-                                name="image"
+                                name="attachment"
                                 accept=".jpg,.jpeg,.png"
                                 required
                             >
 
-                            <p id="file-name" style="margin-top: 8px; font-size: 13px; color: #2563eb;"></p>
-
-                            <label for="image" class="upload-label">
+                            <label
+                                for="image"
+                                class="upload-label"
+                            >
 
                                 <span class="upload-icon">
                                     +
@@ -287,10 +304,17 @@
 
                             </label>
 
+                            <p
+                                id="file-name"
+                                style="margin-top: 8px; font-size: 13px; color: #2563eb;"
+                            ></p>
+
                         </div>
 
                     </div>
 
+
+                    <!-- MESSAGE -->
 
                     <div class="form-group">
 
@@ -307,6 +331,8 @@
 
                     </div>
 
+
+                    <!-- SUBMIT -->
 
                     <button
                         type="submit"
@@ -337,6 +363,7 @@
 <footer class="footer">
 
     <div class="container footer-content">
+
 
         <div>
 
@@ -374,7 +401,7 @@
             </h4>
 
             <p>
-                fix.photoproblem@gmail.com
+                elena.emily.fixphotoproblem@gmail.com
             </p>
 
         </div>
@@ -390,19 +417,30 @@
 
 </footer>
 
-    <script>
+
+<!-- SHOW SELECTED FILE NAME -->
+
+<script>
+
 document.getElementById("image").addEventListener("change", function () {
 
     const fileName = document.getElementById("file-name");
 
     if (this.files.length > 0) {
-        fileName.textContent = "Selected file: " + this.files[0].name;
+
+        fileName.textContent =
+            "Selected file: " + this.files[0].name;
+
     } else {
+
         fileName.textContent = "";
+
     }
 
 });
+
 </script>
-    
+
+
 </body>
 </html>
