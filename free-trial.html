@@ -269,6 +269,8 @@
                                 required
                             >
 
+                            <p id="file-name" style="margin-top: 8px; font-size: 13px; color: #2563eb;"></p>
+
                             <label for="image" class="upload-label">
 
                                 <span class="upload-icon">
@@ -388,5 +390,19 @@
 
 </footer>
 
+    <script>
+document.getElementById("image").addEventListener("change", function () {
+
+    const fileName = document.getElementById("file-name");
+
+    if (this.files.length > 0) {
+        fileName.textContent = "Selected file: " + this.files[0].name;
+    } else {
+        fileName.textContent = "";
+    }
+
+});
+</script>
+    
 </body>
 </html>
