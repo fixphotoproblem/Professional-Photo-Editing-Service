@@ -1101,7 +1101,7 @@ img {
         font-size: 32px;
     }
 
-    .form-row {
+     .form-row {
         grid-template-columns: 1fr;
         gap: 0;
     }
@@ -1116,6 +1116,7 @@ img {
     }
 
 }
+
 
 /* ================================
    PRICE CARDS
@@ -1216,7 +1217,9 @@ img {
 }
 
 
-/* PRICE RESPONSIVE */
+/* ================================
+   PRICE RESPONSIVE
+================================ */
 
 @media (max-width: 900px) {
 
